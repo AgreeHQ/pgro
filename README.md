@@ -53,7 +53,7 @@ as a separate macOS user. See "Hardening" below.
 ## Install
 
 ```sh
-cd ~/src/pgro && go build -o ~/bin/pgro .   # Go 1.24+ (1.22.3 links broken binaries on this macOS)
+cd ~/src/pgro && go build -o /usr/local/bin/pgro .   # Go 1.24+ (1.22.3 links broken binaries on this macOS)
 ```
 
 ## 1. Create the role (run manually on prod, as an admin)
