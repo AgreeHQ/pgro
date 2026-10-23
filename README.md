@@ -52,8 +52,17 @@ as a separate macOS user. See "Hardening" below.
 
 ## Install
 
+Requires Go 1.24+ (1.22.3 links broken binaries on recent macOS).
+
 ```sh
-cd ~/src/pgro && go build -o /usr/local/bin/pgro .   # Go 1.24+ (1.22.3 links broken binaries on this macOS)
+go install github.com/AgreeHQ/pgro@latest
+```
+
+This puts `pgro` in `$(go env GOPATH)/bin` (usually `~/go/bin`); make sure that
+directory is on your `PATH`. To build from a local checkout instead:
+
+```sh
+go build -o /usr/local/bin/pgro .
 ```
 
 ## 1. Create the role (run manually on prod, as an admin)

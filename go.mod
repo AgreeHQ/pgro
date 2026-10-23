@@ -1,4 +1,4 @@
-module pgro
+module github.com/AgreeHQ/pgro
 
 go 1.24
 
